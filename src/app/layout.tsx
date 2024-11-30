@@ -27,6 +27,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+           {/* Google tag (gtag.js) */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHCT732DGW"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KHCT732DGW');
+      </script>
+          
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"></link>
 
       </head>
