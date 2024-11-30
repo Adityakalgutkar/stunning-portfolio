@@ -29,13 +29,6 @@ export default function RootLayout({
       <head>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"></link>
 
-<style>
-
-
-
-</style>
-
-
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

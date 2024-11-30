@@ -73,13 +73,13 @@ export default function Home() {
           style={{ maxWidth: "1240px" }}
         >
           <h2 className="md:text-xl text-sm ">
-            // Hi, I'm Felicity McDowell...
+           {" // Hi, I'm Felicity McDowell..."}
           </h2>
           <h3 className="text-4xl md:text-9xl ">
             <span className="dynamic-text text-[#C5FF41]">
-              _Front-end Developer For <br />
+             {"< _Front-end Developer For "}<br />
             </span>
-            <span className="rotating-text">Web...</span>
+            <span className="rotating-text">{"Web...>"}</span>
           </h3>
         </div>
       </main>
@@ -235,12 +235,13 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Testimonials Section */}
       <section className="testimonials py-10">
         <div className="container grid grid-cols-1 sm:grid-cols-[1.2fr_3fr] gap-7">
           <div className="flex flex-col gap-4">
             <h2 className="text-[#C5FF41] text-xl md:text-2xl">
-              // Clients Testimonials
+             { "// Clients Testimonials"}
             </h2>
             <h3 className="text-white text-4xl md:text-8xl">
               Feedbacks & Reviews
@@ -286,7 +287,7 @@ export default function Home() {
             <div className="flex flex-col justify-between pr-20">
               <div>
                 <h2 className="text-[#C5FF41] text-xl md:text-2xl">
-                  // Hire Me
+                  {"// Hire Me"}
                 </h2>
               </div>
               <div className="text-white text-4xl md:text-xl">
