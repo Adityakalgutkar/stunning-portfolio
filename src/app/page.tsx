@@ -49,38 +49,52 @@ export default function Home() {
     },
   ];
 
+ 
+  const words=[
+
+"Frontend developer",
+"Wordpress developer",
+"Software developer",
+"Shopify deeveloper"
+  ]
+
+
+
   return (
     <div className="grid items-center justify-items-center pb-20 gap-18 ">
+     
       <main
-        className="min-h-screen grid grid-rows-[20px_1fr] gap-8  w-full items-center justify-content justify-items-center"
+        className="min-h-screen grid gap-8 w-full items-center justify-content justify-items-center"
         style={{
-          background: "url('/img/index/main.jpg') no-repeat center",
+          // background: "url('/img/index/cover.jpg') no-repeat center",
           backgroundSize: "cover",
         }}
       >
-        {/* <ol className="list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-       This is portfolio of <b>Aditya</b>{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-        work in progress
-            </code>
-            .
-          </li>
-        </ol> */}
+        <div className="container grid gap-8 max-w-6xl mx-auto p-8 justify-center">
+          <div className="text-center">
+            <h2 className="text-xl md:text-2xl text-gray-200">
+              {"// Hi, I'm Aditya Kalgutkar..."}
+            </h2>
+            <h3 className="text-4xl md:text-7xl font-bold text-white">
+              <span className="dynamic-text text-[#C5FF41]">
+                {"<_Front-end Developer For "}
+                <br />
+              </span>
+              <span className="rotating-text">{"Web...>"}</span>
+            </h3>
+          </div>
+          <div className="action-btn__container flex gap-2 justify-center">
+          <button className="py-1 px-8 text-black bg-[white]">
+            {" "}
+            Read more
+          </button>
 
-        <div
-          className="container row-start-3 text-center"
-          style={{ maxWidth: "1240px" }}
-        >
-          <h2 className="md:text-xl text-sm ">
-           {" // Hi, I'm Felicity McDowell..."}
-          </h2>
-          <h3 className="text-4xl md:text-9xl ">
-            <span className="dynamic-text text-[#C5FF41]">
-             {"< _Front-end Developer For "}<br />
-            </span>
-            <span className="rotating-text">{"Web...>"}</span>
-          </h3>
+          <button className="py-1 px-8 text-black bg-[#C5FF41]">
+            {" "}
+           Download Resume
+          </button>
+
+          </div>
         </div>
       </main>
       {/* Hero Section */}
