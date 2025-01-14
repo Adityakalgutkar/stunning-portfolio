@@ -4,28 +4,70 @@ export default function Home() {
   const services = [
     {
       id: 1,
-      title: "Brand Identity Design",
+      title: "Next.js",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       imgSrc: "/arrow.png", // Adjust path as per your 'public' folder structure
     },
     {
       id: 2,
-      title: "Website Backend Design",
+      title: "Angular",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       imgSrc: "/arrow.png",
     },
     {
       id: 3,
-      title: "Mobile Application Design",
+      title: "Wordpress",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       imgSrc: "/arrow.png",
     },
     {
       id: 4,
-      title: "Motion Graphics Design",
+      title: "Scss",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      imgSrc: "/arrow.png",
+    },
+    {
+      id: 5,
+      title: "Shopify",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      imgSrc: "/arrow.png",
+    },
+    {
+      id: 6,
+      title: "Javascript",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      imgSrc: "/arrow.png",
+    },
+    {
+      id: 7,
+      title: "Typescript",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      imgSrc: "/arrow.png",
+    },
+    {
+      id: 8,
+      title: "Python",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      imgSrc: "/arrow.png",
+    },
+    {
+      id: 9,
+      title: "git",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      imgSrc: "/arrow.png",
+    },
+    {
+      id: 10,
+      title: "dsa",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       imgSrc: "/arrow.png",
@@ -50,13 +92,13 @@ export default function Home() {
   ];
 
  
-  const words=[
+//   const words=[
 
-"Frontend developer",
-"Wordpress developer",
-"Software developer",
-"Shopify deeveloper"
-  ]
+// "Frontend developer",
+// "Wordpress developer",
+// "Software developer",
+// "Shopify deeveloper"
+//   ]
 
 
 
@@ -70,7 +112,7 @@ export default function Home() {
           backgroundSize: "cover",
         }}
       >
-        <div className="container grid gap-8 max-w-6xl mx-auto p-8 justify-center">
+        <div className="container grid gap-4 md:gap-5 max-w-6xl mx-auto p-8 justify-center">
           <div className="text-center">
             <h2 className="text-xl md:text-2xl text-gray-200">
               {"// Hi, I'm Aditya Kalgutkar..."}
@@ -82,14 +124,17 @@ export default function Home() {
               </span>
               <span className="rotating-text">{"Web...>"}</span>
             </h3>
+            <h2 className="text-xl md:text-xl text-gray-400 mt-2 md:mt-4 ">
+            Your Partner in Developing Tomorrow's Tech.
+            </h2>
           </div>
-          <div className="action-btn__container flex gap-2 justify-center">
-          <button className="py-1 px-8 text-black bg-[white]">
+          <div className="action-btn__container flex gap-2 md:gap-5 justify-center">
+          <button className="py-2 px-8 text-black bg-[white]">
             {" "}
             Read more
           </button>
 
-          <button className="py-1 px-8 text-black bg-[#C5FF41]">
+          <button className="py-2 px-8 text-black bg-[#C5FF41]">
             {" "}
            Download Resume
           </button>
@@ -197,24 +242,24 @@ export default function Home() {
       {/* Services */}
 
       <section>
-        <div className="container mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="container mx-auto py-10 px-4 grid grid-cols-3 md:grid-cols-8  justify-center items-center gap-10">
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex items-center bg-[#313131] shadow-lg p-6  rounded-lg hover:shadow-xl transition duration-300 gap-4 text-white"
+              className="flex items-center bg-[#313131] shadow-lg py-3 px-2  rounded-lg hover:shadow-xl transition duration-300 gap-4 text-center text-white justify-center cursor-pointer"
             >
-              <Image
+              {/* <Image
                 src={service.imgSrc}
                 alt=""
                 width={30}
                 height={30}
                 className="rounded-full"
-              />
+              /> */}
               <div>
-                <h3 className="text-lg font-regular capitalize mt-4">
+                <h3 className="text-lg text-center font-regular capitalize  ">
                   {service.title}
                 </h3>
-                <p className="font-regular">{service.description}</p>
+                {/* <p className="font-regular">{service.description}</p> */}
               </div>
             </div>
           ))}
@@ -280,7 +325,7 @@ export default function Home() {
                 </div>
 
                 <div className="client flex flex-col items-center">
-                  <img
+                  <Image width={50} height={50}
                     src={testimonial.clientImage}
                     alt={`${testimonial.clientName}'s avatar`}
                   />
