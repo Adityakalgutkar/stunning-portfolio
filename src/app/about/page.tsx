@@ -1,47 +1,47 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
+// import React, { useState } from "react";
+// import Image from "next/image";
 // Sample project data
-const projects = [
-  {
-    id: 1,
-    title: "Lumin Project for Lighthouse",
-    category: "css",
-    image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-4.jpg",
-    link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/lumin-project-for-lighthouse/",
-  },
-  {
-    id: 2,
-    title: "Creative Magic App for Branding",
-    category: "html",
-    image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-9.jpg",
-    link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/creative-magic-app-for-branding/",
-  },
-  {
-    id: 3,
-    title: "Back-end Popups and Graphic Design",
-    category: "css",
-    image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-6.jpg",
-    link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/back-end-popups-and-graphic-design/",
-  },
-  {
-    id: 4,
-    title: "The All-In-One Financial Platform",
-    category: "html",
-    image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-8.jpg",
-    link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/the-all-in-one-financial-platform/",
-  },
-];
+// const projects = [
+//   {
+//     id: 1,
+//     title: "Lumin Project for Lighthouse",
+//     category: "css",
+//     image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-4.jpg",
+//     link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/lumin-project-for-lighthouse/",
+//   },
+//   {
+//     id: 2,
+//     title: "Creative Magic App for Branding",
+//     category: "html",
+//     image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-9.jpg",
+//     link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/creative-magic-app-for-branding/",
+//   },
+//   {
+//     id: 3,
+//     title: "Back-end Popups and Graphic Design",
+//     category: "css",
+//     image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-6.jpg",
+//     link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/back-end-popups-and-graphic-design/",
+//   },
+//   {
+//     id: 4,
+//     title: "The All-In-One Financial Platform",
+//     category: "html",
+//     image: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/wp-content/uploads/sites/107/2024/01/Project-8.jpg",
+//     link: "https://demosites.royal-elementor-addons.com/developer-portfolio-v1/2024/01/22/the-all-in-one-financial-platform/",
+//   },
+// ];
 
 
 
 export default function Portfolio(){
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  // const [selectedCategory, setSelectedCategory] = useState("all");
 
   // Filtered projects based on the selected category
-  const filteredProjects = selectedCategory === "all"
-    ? projects
-    : projects.filter((project) => project.category === selectedCategory);
+  // const filteredProjects = selectedCategory === "all"
+  //   ? projects
+  //   : projects.filter((project) => project.category === selectedCategory);
 
     return(
         <div className="grid items-center justify-items-center pb-20 gap-18 ">
@@ -109,15 +109,15 @@ export default function Portfolio(){
             Crafting Digital Excellence with Heart
 
             </li>
-            <li className="point">A Web Developer's Dedication to Seamless Online Experiences
+            <li className="point">A Web Developer Dedication to Seamless Online Experiences
 </li>
-            <li className="point">A Web Developer's Dedication to Transformative Digital Solutions
+            <li className="point">A Web Developer Dedication to Transformative Digital Solutions
 </li>
-            <li className="point">The Heartbeat of a Web Developer's Commitment to Excellence
+            <li className="point">The Heartbeat of a Web Developer Commitment to Excellence
 </li>
-            <li className="point">The Driving Force Behind a Web Developer's Work
+            <li className="point">The Driving Force Behind a Web Developer Work
            </li>
-            <li className="point"> The Motivations Fueling a Web Developer's Tireless Pursuit
+            <li className="point"> The Motivations Fueling a Web Developer Tireless Pursuit
            </li>
           </ul>
 
