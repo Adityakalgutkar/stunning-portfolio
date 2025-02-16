@@ -1,8 +1,8 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Aditya",
+  lastName: "Kalgutkar",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
@@ -17,7 +17,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
+      I occasionally write about design, technology, and share insights on the convergence of
       creativity and engineering.
     </>
   ),
